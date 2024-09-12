@@ -30,7 +30,7 @@ const categories = [
 export default class Storage {
   // ? add new category
   // ? save category
-  
+
   // ? get all categories
   static getAllCategories() {
     const savedCategories = JSON.parse(localStorage.getItem("category")) || [];
@@ -39,5 +39,20 @@ export default class Storage {
       return new Date(a.createdAt) > new Date(b.createdAt) ? -1 : 1;
     });
     return sortedCategories;
+  }
+  static saveCategory(categoryToSave) {
+    const savedCategories = Storage.getAllCategories();
+    const existedItem = savedCategories.find((c) => c.id == categoryToSave.id);
+    if (existedItem) {
+      // ? edit
+      existedItem.title = categoryToSave.title;
+      existedItem.description = categoryToSave.description;
+    } else {
+      // ? new
+      categoryToSave.id = new Date().getItem()
+      categoryToSave.createdAt = new Date().toISOString()
+      savedCategories.push(categoryToSave)
+    }
+    localStorage.setItem("category", JSON.stringify(savedCategories));
   }
 }
