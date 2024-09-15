@@ -57,7 +57,7 @@
               >
                 Cancel
               </button>
-              <button
+              <button id="add-new-category"
                 class="flex-1 bg-slate-400 text-slate-200 rounded-xl py-2"
               >
                 Add new Category
@@ -100,19 +100,11 @@
                 name="product-category"
                 id="product-category"
               >
-                <option class="bg-slate-500 text-slate-300" value="select">
-                  select a category
-                </option>
-                <option class="bg-slate-500 text-slate-300" value="frontend">
-                  front-end
-                </option>
-                <option class="bg-slate-500 text-slate-300" value="backend">
-                  back-end
-                </option>
+               
               </select>
             </div>
             <div class="flex items-center justify-between gap-x-4">
-              <button
+              <button id="add-new-product"
                 class="flex-1 bg-slate-400 text-slate-200 rounded-xl py-2"
               >
                 Add new Product
@@ -122,19 +114,8 @@
         </div>
         <!-- ? product list -->
         <h2 class="text-xl text-slate-300 font-bold mb-2">Product List</h2>
-        <div class="flex items-center justify-between capitalize">
-          <span class="text-slate-400">React.js</span>
-          <div class="flex items-center gap-x-3">
-            <span class="text-slate-400">24/10/8</span>
-            <span
-              class="block px-3 py-0.5 text-slate-400 text-sm border border-slate-400 rounded-2xl capitalize"
-              >front-end</span
-            >
-            <span
-              class="flex items-center justify-center w-7 h-7 rounded-full bg-slate-500 text-slate-300 border-2 border-slae-300"
-              >7</span>
-              <button class="border px-3 py-0.5 rounded-2xl border-red-300 text-red-300 text-sm capitalize">delete</button>
-          </div>
+        <div id="products-list">
+          
         </div>
         <div class="h-20"></div>
       </div>

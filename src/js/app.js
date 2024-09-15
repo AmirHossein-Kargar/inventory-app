@@ -1,6 +1,18 @@
-class App {
-    
-}
+import CategoryView from "./CategoryView.js";
+import ProductsView from "./ProductsView.js";
+// class App {
+
+// }
+
+document.addEventListener("DOMContentLoaded", () => {
+  CategoryView.setApp();
+  ProductsView.setApp()
+  CategoryView.createCategoriesList();
+  ProductsView.createProductsList()
+  // console.log(Storage.getAllCategories());
+  // console.log(ProductsView.products);  
+});
+
 // ! All We Need
 // ? 1. create category
 // ? 2. create product based on selected category

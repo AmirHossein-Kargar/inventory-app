@@ -49,7 +49,7 @@ export default class Storage {
       existedItem.description = categoryToSave.description;
     } else {
       // ? new
-      categoryToSave.id = new Date().getItem();
+      categoryToSave.id = new Date().getTime();
       categoryToSave.createdAt = new Date().toISOString();
       savedCategories.push(categoryToSave);
     }
@@ -74,7 +74,7 @@ export default class Storage {
         existedItem.category = productToSave.category
       } else {
         // ? new
-        productToSave.id = new Date().getItem();
+        productToSave.id = new Date().getTime();
         productToSave.createdAt = new Date().toISOString();
         savedProducts.push(productToSave);
       }
