@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "postcss ./src/css/main.css -o ./public/build/tailwind.css --watch"
+    "build": "postcss ./src/css/main.css -o ./public/build/tailwind.css --watch"
   },
   "keywords": [],
   "author": "Amir",

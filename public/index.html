@@ -57,7 +57,8 @@
               >
                 Cancel
               </button>
-              <button id="add-new-category"
+              <button
+                id="add-new-category"
                 class="flex-1 bg-slate-400 text-slate-200 rounded-xl py-2"
               >
                 Add new Category
@@ -99,12 +100,11 @@
                 class="bg-transparent text-slate-400 rounded-xl w-full cursor-pointer"
                 name="product-category"
                 id="product-category"
-              >
-               
-              </select>
+              ></select>
             </div>
             <div class="flex items-center justify-between gap-x-4">
-              <button id="add-new-product"
+              <button
+                id="add-new-product"
                 class="flex-1 bg-slate-400 text-slate-200 rounded-xl py-2"
               >
                 Add new Product
@@ -113,10 +113,12 @@
           </form>
         </div>
         <!-- ? product list -->
+         <div class="flex items-center justify-between mb-6">
+          <label for="search-input" class="text-slate-500 text-lg">search</label>
+          <input type="text" name="search-input" id="search-input" class="bg-transparent rounded-xl border border-slate-500 text-slate-400">
+         </div>
         <h2 class="text-xl text-slate-300 font-bold mb-2">Product List</h2>
-        <div id="products-list">
-          
-        </div>
+        <div id="products-list"></div>
         <div class="h-20"></div>
       </div>
     </div>

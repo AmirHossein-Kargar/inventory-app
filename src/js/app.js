@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   CategoryView.setApp();
   ProductsView.setApp()
   CategoryView.createCategoriesList();
-  ProductsView.createProductsList()
+  ProductsView.createProductsList(ProductsView.products)
   // console.log(Storage.getAllCategories());
   // console.log(ProductsView.products);  
 });
